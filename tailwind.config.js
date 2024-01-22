@@ -17,6 +17,7 @@ module.exports = {
       },
       colors : {
         'gradient-color': "linear-gradient(270deg, #F00 0%, #FF8938 100%)",
+        'gradient-color-primary': "linear-gradient(270deg, #F00 0%, #FF8938 100%)",
       }
     },
   },

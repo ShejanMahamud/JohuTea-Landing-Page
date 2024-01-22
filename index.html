@@ -29,7 +29,7 @@
         class="navbar bg-base-100 w-full lg:w-[90%] mx-auto my-3 flex items-center justify-between"
       >
         <div class="">
-          <div class="dropdown">
+          <div class="dropdown md:hidden">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -102,9 +102,9 @@
             >
           </div>
         </div>
-        <div class="navbar-center hidden lg:flex">
+        <div class="navbar-center hidden lg:flex md:flex">
           <ul
-            class="menu menu-horizontal px-1 flex items-center gap-4 font-medium text-base"
+            class="menu menu-horizontal px-1 flex items-center gap-4 font-medium text-base md:text-xs md:gap-2"
           >
             <li><a>Home</a></li>
             <li>
@@ -282,7 +282,7 @@
         <div class="relative">
           <img src="./images/banner.png" alt="banner.jpg" class="" />
           <div
-            class="bg-white shadow-2xl rounded-2xl px-3 lg:px-8 lg:py-8 py-3 inline-flex items-center gap-2 absolute bottom-0 lg:left-36 left-16"
+            class="bg-white shadow-2xl rounded-2xl px-3 lg:px-8 lg:py-8 py-3 inline-flex items-center gap-2 absolute bottom-0 lg:left-36 left-16 md:left-56 md:bottom-8"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -343,7 +343,9 @@
           the majority have suffered alteration in some form, by injected
           humour, or randomised words which don't look even slightly believable.
         </p>
-        <div class="grid grid-cols-1 lg:grid-cols-4 row-auto mx-auto gap-10">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 row-auto mx-auto gap-10"
+        >
           <div
             class="bg-gradient-secondary flex flex-col justify-center items-center px-6 py-8 text-center rounded-2xl gap-3"
           >
@@ -844,11 +846,25 @@
                 We are providing the best and suitable home insurance services
                 for the people who are interested to treatment
               </p>
-              <div>
-                <h1 class="text-[#1c1c1c] font-xl font-extrabold">
-                  Ilham Yuda
-                </h1>
-                <p class="text-[#777] font-medium">Businessman</p>
+              <div class="flex justify-between items-center">
+                <div>
+                  <h1 class="text-[#1c1c1c] font-xl font-extrabold">
+                    Ilham Yuda
+                  </h1>
+                  <p class="text-[#777] font-medium">Businessman</p>
+                </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="24"
+                  viewBox="0 0 25 24"
+                  fill="none"
+                >
+                  <circle cx="12.5" cy="3.64111" r="3.5" fill="#A2BDF6" />
+                  <circle cx="3.5" cy="11.6411" r="3.5" fill="#A2BDF6" />
+                  <circle cx="21.5" cy="11.6411" r="3.5" fill="#EDB7D5" />
+                  <circle cx="12.5" cy="19.6411" r="3.5" fill="#EDB7D5" />
+                </svg>
               </div>
             </div>
           </div>
@@ -890,7 +906,9 @@
           the majority have suffered alteration in some form, by injected
           humour, or randomised words which don't look even slightly believable.
         </p>
-        <div class="grid lg:grid-cols-3 grid-cols-1 row-auto gap-16">
+        <div
+          class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 row-auto gap-16"
+        >
           <!-- 1st -->
           <div
             class="border border-[#D2D2D2] rounded-xl px-4 flex flex-col items-center py-4"
@@ -960,10 +978,92 @@
           <!-- end -->
         </div>
       </section>
+      <!-- faq section -->
+      <section
+        class="w-full mx-auto my-20 grid grid-cols-1 lg:grid-cols-2 row-auto gap-16 items-center"
+      >
+        <div>
+          <img src="./images/faq.png" alt="faq.png" />
+        </div>
+        <div>
+          <h1 class="text-4xl lg:text-5xl font-extrabold">FAQ</h1>
+          <p class="text-[#777] font-medium mx-auto mt-6 mb-8">
+            You can explore some frequintly asked questions of ours.
+          </p>
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title text-xl font-medium">
+              What is JohuTea known for?
+            </div>
+            <div class="collapse-content">
+              <p>
+                JohuTea is known for offering a diverse range of high-quality
+                teas sourced from various regions, each selected for its unique
+                flavor profile and exceptional quality.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">
+              Where does JohuTea source its teas from?
+            </div>
+            <div class="collapse-content">
+              <p>
+                We carefully source our teas from renowned tea estates across
+                the globe, ensuring that each tea is ethically produced and of
+                the highest quality.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">
+              What types of tea does JohuTea offer?
+            </div>
+            <div class="collapse-content">
+              <p>
+                JohuTea offers a wide variety of teas, including black, green,
+                white, oolong, and herbal teas. Our collection caters to
+                different preferences, allowing you to explore a world of
+                flavors.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">
+              Are JohuTea's teas organic?
+            </div>
+            <div class="collapse-content">
+              <p>
+                Yes, we are committed to offering organic and sustainably
+                sourced teas whenever possible. Our teas are free from harmful
+                pesticides and chemicals, providing a natural and authentic
+                tea-drinking experience.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title text-xl font-medium">
+              How can I brew the perfect cup of tea with JohuTea?
+            </div>
+            <div class="collapse-content">
+              <p>
+                For brewing guidelines, refer to the specific instructions on
+                each tea package. Generally, use fresh, filtered water and
+                follow the recommended steeping time and temperature for the
+                particular type of tea you have.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- footer section -->
     <footer
-      class="w-full bg-footer-bg px-5 lg:px-40 py-20 flex flex-col gap-16"
+      class="w-full bg-footer-bg px-10 lg:px-40 py-20 flex flex-col gap-16"
     >
       <div class="flex justify-between items-center">
         <img src="./images/cup.png" alt="cup.png" />
@@ -972,14 +1072,14 @@
             Ready to get strated?
           </p>
           <button
-            class="bg-gradient-primary lg:px-6 px-4 lg:py-5 py-3 text-white text-sm font-extrabold rounded-lg"
+            class="bg-gradient-primary lg:px-6 px-4 lg:py-3 py-3 text-white text-sm font-extrabold rounded-lg"
           >
             Get Started
           </button>
         </div>
       </div>
       <div
-        class="lg:grid-cols-4 grid-cols-1 row-auto grid items-center justify-center gap-10"
+        class="lg:grid-cols-4 md:grid-cols-2 grid-cols-1 row-auto grid items-center justify-center gap-10"
       >
         <div>
           <h1 class="text-[#1c1c1c] text-xl font-semibold mb-4">Quick Links</h1>
